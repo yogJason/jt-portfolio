@@ -23,7 +23,7 @@ function MainContent() {
             Welcome to my page!
           </h1>
           <p className="text-lg md:text-xl text-textSecondary-light dark:text-textSecondary-dark">
-            I'm <b>Jason Thao</b>, a Software Engineer currently at Community Care, Inc.
+            I'm <b>Jason Thao</b>, a software engineer focused on full-stack web development currently at IGEN, a US Venture company.
           </p>
         </div>
         <div className="w-full md:flex-1 flex justify-center">

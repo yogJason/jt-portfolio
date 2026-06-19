@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import reactIcon from '../assets/logos/react.svg';
-import azureIcon from '../assets/logos/azuredevops.svg';
+import azureIcon from '../assets/logos/azure.svg';
 import tailwindIcon from '../assets/logos/tailwindcss.svg';
-import brunoIcon from '../assets/logos/bruno.png';
-import postgreSQLIcon from '../assets/logos/postgreSQL.svg';
-import githubIcon from '../assets/logos/github.svg';
 import netcoreIcon from '../assets/logos/.netcore.svg';
 import csharpIcon from '../assets/logos/csharp.svg';
 
@@ -47,14 +44,11 @@ const SkillCard = ({ icon, name, isVisible, delay }) => {
 
 const Skills = () => {
   const skillsList = [
-    { icon: reactIcon, name: 'Reactjs' },
+    { icon: reactIcon, name: 'React' },
     { icon: csharpIcon, name: 'C#' },
+    { icon: netcoreIcon, name: 'ASP.NET Core' },
     { icon: tailwindIcon, name: 'TailwindCSS' },
-    { icon: postgreSQLIcon, name: 'PostgreSQL' },
-    { icon: brunoIcon, name: 'Bruno' },
-    { icon: githubIcon, name: 'GitHub' },
-    { icon: netcoreIcon, name: '.NET Core' },
-    { icon: azureIcon, name: 'Azure DevOps' },
+    { icon: azureIcon, name: 'Azure' },
   ];
 
   const [isVisible, setIsVisible] = useState(false);

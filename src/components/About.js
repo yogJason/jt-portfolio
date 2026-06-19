@@ -12,9 +12,9 @@ const About = () => {
       id="about"
     >
       <p className="text-lg text-textSecondary-light dark:text-textSecondary-dark">
-        I am an adaptable engineer who thrives on new challenges and learning opportunities. 
-        Currently focused on development with .NET and React, I am open to learning new 
-        technologies for team and personal growth. 
+        Versatile software engineer driven by curiosity and a passion for tackling complex 
+        problems — known for delivering high-quality solutions that earn trust across 
+        engineering and leadership.
         <br /> 
         I contribute as both a team player and leader, earning the trust of my managers and 
         peers through proven capabilities and a resilient mindset. 

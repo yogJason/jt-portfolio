@@ -16,8 +16,7 @@ const About = () => {
         problems — known for delivering high-quality solutions that earn trust across 
         engineering and leadership.
         <br /> 
-        I contribute as both a team player and leader, earning the trust of my managers and 
-        peers through proven capabilities and a resilient mindset. 
+        I contribute as both a team player and leader, earning the trust of my team through proven capabilities and a resilient mindset. 
         <br/>
         I continuously grow professionally as a software engineer, and enjoy mentoring junior engineers.
       </p>

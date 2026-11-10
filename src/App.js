@@ -16,7 +16,7 @@ function MainContent() {
       
       <section 
         id="home" 
-        className="flex flex-col md:flex-row items-center p-6 md:p-16 min-h-[80vh] max-w-7xl mx-auto bg-surface-light dark:bg-surface-dark mt-16 mb-20"
+        className="flex flex-col md:flex-row items-center p-6 md:p-16 min-h-[80vh] max-w-7xl mx-auto bg-surface-light dark:bg-surface-dark rounded-xl shadow-lg mt-16 mb-20"
       >
         <div className="w-full md:flex-1 md:pr-8 text-center md:text-left mb-8 md:mb-0">
           <h1 className="text-3xl md:text-4xl mb-4 text-text-light dark:text-text-dark font-bold">

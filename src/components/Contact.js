@@ -12,7 +12,6 @@ const Contact = () => {
       title="Contact Me"
       cardRef={contactRef}
       id="contact"
-      className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md"
     >
       <p className="text-lg text-textSecondary-light dark:text-textSecondary-dark mb-10">
         Feel free to reach out to me, I'm always open to new opportunities and collaborations!

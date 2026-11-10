@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import reactIcon from '../assets/logos/react.svg';
 import azureIcon from '../assets/logos/azure.svg';
-import tailwindIcon from '../assets/logos/tailwindcss.svg';
 import netcoreIcon from '../assets/logos/.netcore.svg';
 import csharpIcon from '../assets/logos/csharp.svg';
+import { SiDatabricks, SiDocker, SiNextdotjs } from 'react-icons/si';
 
 import useScrollReveal from '../hooks/useScrollReveal';
 
@@ -21,13 +21,23 @@ const SkillCard = ({ icon, name, isVisible, delay }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img
-        src={icon}
-        alt={`${name} icon`}
-        className={`w-12 h-12 transition-transform duration-200 ${
-          isHovered ? 'scale-110' : 'scale-100'
-        }`}
-      />
+      {typeof icon === 'string' ? (
+        <img
+          src={icon}
+          alt={`${name} icon`}
+          className={`w-12 h-12 transition-transform duration-200 ${
+            isHovered ? 'scale-110' : 'scale-100'
+          }`}
+        />
+      ) : (
+        React.createElement(icon, {
+          'aria-label': `${name} icon`,
+          className: `w-12 h-12 transition-transform duration-200 ${
+            isHovered ? 'scale-110' : 'scale-100'
+          } ${name === 'Next.js' ? 'text-black dark:text-white' : ''}`,
+          color: name === 'Docker' ? '#2496ED' : name === 'Next.js' ? 'currentColor' : '#FF3621',
+        })
+      )}
       <div
         className={`absolute -bottom-2 bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark px-3 py-2 rounded text-sm 
         shadow-lg pointer-events-none transition-all duration-200 ${
@@ -45,9 +55,11 @@ const SkillCard = ({ icon, name, isVisible, delay }) => {
 const Skills = () => {
   const skillsList = [
     { icon: reactIcon, name: 'React' },
+    { icon: SiNextdotjs, name: 'Next.js' },
     { icon: csharpIcon, name: 'C#' },
     { icon: netcoreIcon, name: 'ASP.NET Core' },
-    { icon: tailwindIcon, name: 'TailwindCSS' },
+    { icon: SiDocker, name: 'Docker' },
+    { icon: SiDatabricks, name: 'Databricks' },
     { icon: azureIcon, name: 'Azure' },
   ];
 
@@ -85,7 +97,7 @@ const Skills = () => {
       title="Skills"
       cardRef={sectionRef}
       id="skills"
-      className="bg-background-light dark:bg-background-dark py-16 px-8 rounded-none shadow-none"
+      className="py-16 px-8"
     >
       <div className="flex flex-wrap justify-center items-center gap-12 max-w-3xl mx-auto w-full">
         {skillsList.map((skill, index) => (

@@ -18,7 +18,7 @@ const About = () => {
         <br /> 
         I contribute as both a team player and leader, earning the trust of my team through proven capabilities and a resilient mindset. 
         <br/>
-        I continuously grow professionally as a software engineer, and enjoy mentoring junior engineers.
+        I continuously grow professionally as a software engineer, and enjoy mentoring others when the opportunities exist.
       </p>
     </Card>
   );

@@ -15,7 +15,7 @@ const Portfolio = () => {
     >
       <h2 className="text-3xl mb-10 text-center text-text-light dark:text-text-dark">My Projects</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {/* Portfolio Card */}
         <div 
           ref={portfolioCard1Ref}
@@ -32,6 +32,28 @@ const Portfolio = () => {
               </span>
               <span className="bg-background-light dark:bg-background-dark px-3 py-1 rounded-full text-sm text-textSecondary-light dark:text-textSecondary-dark">
                 TailwindCSS
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          ref={portfolioCard3Ref}
+          className="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden cursor-pointer shadow-lg h-full transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <div className="p-6">
+            <h3 className="text-2xl mb-4 text-text-light dark:text-text-dark">Course Content Builder</h3>
+            <p className="text-textSecondary-light dark:text-textSecondary-dark mb-4">
+                Developed a course content builder with Next.js, TailwindCSS, and Azure AI Foundry that generates course materials through LLM workflows, replacing vendor-managed content generation and reducing annual operating costs by over $80,000.            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-background-light dark:bg-background-dark px-3 py-1 rounded-full text-sm text-textSecondary-light dark:text-textSecondary-dark">
+                Next.js
+              </span>
+              <span className="bg-background-light dark:bg-background-dark px-3 py-1 rounded-full text-sm text-textSecondary-light dark:text-textSecondary-dark">
+                TailwindCSS
+              </span>
+              <span className="bg-background-light dark:bg-background-dark px-3 py-1 rounded-full text-sm text-textSecondary-light dark:text-textSecondary-dark">
+                Azure AI Foundry
               </span>
             </div>
           </div>

@@ -11,7 +11,7 @@ const Card = ({
     <section 
       ref={cardRef}
       id={id}
-      className={`max-w-4xl mx-auto my-16 py-12 px-8 text-center ${className}`}
+      className={`max-w-4xl mx-auto my-16 py-12 px-8 text-center bg-surface-light dark:bg-surface-dark rounded-xl shadow-lg ${className}`}
     >
       {title && (
         <h2 className="text-3xl mb-8 text-text-light dark:text-text-dark">
